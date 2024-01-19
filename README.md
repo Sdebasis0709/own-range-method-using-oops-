@@ -18,7 +18,7 @@ This example will print numbers in reverse order from 10 to -1 with a step of -1
 
 How to Use:
 
-Clone the repository: git clone https://github.com/your-username/my_range.git
+Clone the repository: git clone https://github.com/Sdebasis0709/my_range.git
 Import the my_range module in your Python script.
 Create an instance of my_range and iterate over the values using a for loop.
 Feel free to explore, contribute, and integrate this custom range implementation into your Python projects!
