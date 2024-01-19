@@ -17,7 +17,10 @@ class my_range_iterator:
         return self
     
     def __next__(self):
-        if self.iterable_obj.start < self.iterable_obj.stop:
+        if (self.iterable_obj.start < self.iterable_obj.stop and
+                self.iterable_obj.step > 0) or 
+                (self.iterable_obj.start > self.iterable_obj.stop and
+                 self.iterable_obj.step < 0):
             result=self.iterable_obj.start
             self.iterable_obj.start+=self.iterable_obj.step
             return result
