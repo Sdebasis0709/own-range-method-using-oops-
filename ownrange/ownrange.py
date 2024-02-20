@@ -1,7 +1,10 @@
 class my_range:
     def __init__(self,start=0,stop=None,step=1):
         if stop is None:
-            raise TypeError("range acepted atleast 1 argument ,got 0")
+            if start==0:
+                raise TypeError("range acepted atleast 1 argument ,got 0")
+            stop=start
+            start=0
         self.start=start
         self.stop=stop
         self.step=step
