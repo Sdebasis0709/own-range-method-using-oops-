@@ -20,10 +20,7 @@ class my_range_iterator:
         return self
     
     def __next__(self):
-        if (self.iterable_obj.start < self.iterable_obj.stop and
-                self.iterable_obj.step > 0) or 
-                (self.iterable_obj.start > self.iterable_obj.stop and
-                 self.iterable_obj.step < 0):
+        if (self.iterable_obj.start < self.iterable_obj.stop and  self.iterable_obj.step > 0) or (self.iterable_obj.start > self.iterable_obj.stop and  self.iterable_obj.step < 0):
             result=self.iterable_obj.start
             self.iterable_obj.start+=self.iterable_obj.step
             return result
@@ -32,3 +29,9 @@ class my_range_iterator:
         
 for ele in my_range(10,-1):
     print(ele)
+
+
+
+
+
+print("qwertyuiokjn ")
